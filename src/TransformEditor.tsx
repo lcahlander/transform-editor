@@ -83,13 +83,6 @@ export default function TransformEditor() {
                             inputs: { dividend: "c", divisor: null },
                             outputs: { quotient: [], remainder: [] },
                         },
-                        d: {
-                            id: "d",
-                            kind: "sub",
-                            position: { x: 1, y: 6 },
-                            inputs: { a: null, b: null },
-                            outputs: { difference: [] },
-                        },
                     },
                     edges: {
                         c: {

@@ -18,6 +18,24 @@ import {
 } from "react-dataflow-editor";
 
 const kinds = {
+    src1: {
+        name: "Source 1",
+        inputs: { },
+        outputs: { v: null },
+        backgroundColor: "goldenrod",
+    },
+    src2: {
+        name: "Source 2",
+        inputs: { },
+        outputs: { v: null },
+        backgroundColor: "goldenrod",
+    },
+    target: {
+        name: "Target",
+        inputs: { v: null },
+        outputs: {  },
+        backgroundColor: "goldenrod",
+    },
     add: {
         name: "Addition",
         inputs: { a: null, b: null },
@@ -72,14 +90,14 @@ export default function TransformEditor() {
                         a: {
                             id: "a",
                             kind: "add",
-                            position: { x: 1, y: 1 },
+                            position: { x: 4, y: 1 },
                             inputs: { a: null, b: null },
                             outputs: { sum: ["c"] },
                         },
                         b: {
                             id: "b",
                             kind: "div",
-                            position: { x: 5, y: 3 },
+                            position: { x: 9, y: 3 },
                             inputs: { dividend: "c", divisor: null },
                             outputs: { quotient: [], remainder: [] },
                         },
